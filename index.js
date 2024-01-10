@@ -21,7 +21,7 @@ function logo({ letters, textColor, shape, color }) {
   newShape.setTextColor(textColor);
   newShape.setLetters(letters);
 
-  return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">${newShape.render()}<text x="50%" y="50%" text-anchor="middle" font-size="60" fill = "${newShape.textColor}">${newShape.letters}</text></svg>`;
+  return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">${newShape.render()} text-anchor="middle" font-size="60" fill = "${newShape.textColor}">${newShape.letters}</text></svg>`;
 }
 
 const questions = [
